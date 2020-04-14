@@ -1,8 +1,8 @@
-import React, { Component } from  'react';
-import PropTypes from 'prop-types';
-import BookmarksContext from '../BookmarksContext';
+import React, { Component } from  'react'
+import PropTypes from 'prop-types'
+import BookmarksContext from '../BookmarksContext'
 import config from '../config'
-import './AddBookmark.css';
+import './AddBookmark.css'
 
 const Required = () => (
   <span className='AddBookmark__required'>*</span>
@@ -140,8 +140,8 @@ class AddBookmark extends Component {
           </div>
         </form>
       </section>
-    );
+    )
   }
 }
 
-export default AddBookmark;
+export default AddBookmark

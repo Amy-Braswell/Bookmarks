@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import EditBookmark from './EditBookmark';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import EditBookmark from './EditBookmark'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
+  const div = document.createElement('div')
   const props = {
     match: { params: {} },
     history: {
@@ -12,4 +12,4 @@ it('renders without crashing', () => {
   }
   ReactDOM.render(<EditBookmark {...props} />, div);
   ReactDOM.unmountComponentAtNode(div);
-});
+})

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import BookmarksContext from '../BookmarksContext';
-import BookmarkItem from '../BookmarkItem/BookmarkItem';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import BookmarksContext from '../BookmarksContext'
+import BookmarkItem from '../BookmarkItem/BookmarkItem'
 import './BookmarkList.css'
 
 class BookmarkList extends Component {
@@ -14,11 +14,11 @@ class BookmarkList extends Component {
         ]).isRequired,
       })
     )
-  };
+  }
 
   static defaultProps = {
     bookmarks: []
-  };
+  }
 
   static contextType = BookmarksContext;
 
@@ -36,8 +36,8 @@ class BookmarkList extends Component {
           )}
         </ul>
       </section>
-    );
+    )
   }
 }
 
-export default BookmarkList;
+export default BookmarkList

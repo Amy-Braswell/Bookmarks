@@ -1,8 +1,8 @@
-import React, { Component } from  'react';
-import PropTypes from 'prop-types';
-import BookmarksContext from '../BookmarksContext';
+import React, { Component } from  'react'
+import PropTypes from 'prop-types'
+import BookmarksContext from '../BookmarksContext'
 import config from '../config'
-import './EditBookmark.css';
+import './EditBookmark.css'
 
 const Required = () => (
   <span className='EditBookmark__required'>*</span>
@@ -16,9 +16,9 @@ class EditBookmark extends Component {
     history: PropTypes.shape({
       push: PropTypes.func,
     }).isRequired,
-  };
+  }
 
-  static contextType = BookmarksContext;
+  static contextType = BookmarksContext
 
   state = {
     error: null,
@@ -27,7 +27,7 @@ class EditBookmark extends Component {
     url: '',
     description: '',
     rating: 1,
-  };
+  }
 
   componentDidMount() {
     const { bookmarkId } = this.props.match.params
@@ -60,19 +60,19 @@ class EditBookmark extends Component {
 
   handleChangeTitle = e => {
     this.setState({ title: e.target.value })
-  };
+  }
 
   handleChangeUrl = e => {
     this.setState({ url: e.target.value })
-  };
+  }
 
   handleChangeDescription = e => {
     this.setState({ description: e.target.value })
-  };
+  }
 
   handleChangeRating = e => {
     this.setState({ rating: e.target.value })
-  };
+  }
 
   handleSubmit = e => {
     e.preventDefault()
@@ -203,8 +203,8 @@ class EditBookmark extends Component {
           </div>
         </form>
       </section>
-    );
+    )
   }
 }
 
-export default EditBookmark;
+export default EditBookmark
